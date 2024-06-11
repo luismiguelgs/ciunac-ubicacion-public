@@ -71,6 +71,8 @@ export default class SolicitudesService
         if(docRef){
             const dataSolicitud = {
                 solicitud: data.tipo_solicitud,
+                apellidos: data.apellidos,
+                nombres: data.nombres,
                 periodo : data.periodo,
                 estado:'NUEVO',
                 pago:+data.pago,
